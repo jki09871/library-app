@@ -1,12 +1,12 @@
 plugins {
-	id 'org.springframework.boot' version '2.7.6'
+	id 'org.springframework.boot' version '3.3.3'
 	id 'io.spring.dependency-management' version '1.0.12.RELEASE'
 	id 'java'
 }
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '11'
+sourceCompatibility = '17'
 
 repositories {
 	mavenCentral()
@@ -19,6 +19,7 @@ dependencies {
 	runtimeOnly 'mysql:mysql-connector-java'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	runtimeOnly "org.springframework.boot:spring-boot-propertise-migrator"
 }
 
 tasks.named('test') {

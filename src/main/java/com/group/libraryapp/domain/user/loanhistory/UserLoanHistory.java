@@ -1,8 +1,8 @@
 package com.group.libraryapp.domain.user.loanhistory;
 
 import com.group.libraryapp.domain.user.User;
+import jakarta.persistence.*;
 
-import javax.persistence.*;
 
 @Entity
 public class UserLoanHistory {
